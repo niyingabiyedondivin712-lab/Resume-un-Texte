@@ -13,7 +13,7 @@ def Resume(text):
         model='openai/gpt-oss-20b',
         messages=[
             {'role':'system',
-             'content':"fais une resume de texte concis qui capture les idee essentiel, sans detail le superflus." },
+             'content':"fais une resume de texte concis qui capture les idee essentiel, sans detail le superflus.Puis faire resume dans le langue ecrit par le texte puis si il te demande de resume en une autre lange alors le faire" },
              {'role':'user',
               'content':text}
         ]
